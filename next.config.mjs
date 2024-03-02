@@ -5,6 +5,7 @@ const withSerwist = withSerwistInit({
   cacheOnFrontEndNav: true,
   swSrc: "app/sw.ts",
   swDest: "public/sw.js",
+  
 });
 
 /** @type {import("next").NextConfig} */
