@@ -30,23 +30,42 @@ export const viewport: Viewport = {
   themeColor: "#FFFFFF",
 };
 
+
 export default function RootLayout({ children }: { children: ReactNode }) {
   return (
     <html lang="en" dir="ltr">
+      
       <head>
-        <style>{`
-            html, body, #__next {
-              height: 100%;
-            }
-            #__next {
-              margin: 0 auto;
-            }
-            h1 {
-              text-align: center;
-            }
-            `}</style>
+     
+
+
+        <link rel="stylesheet" href="./css/layout.css" />
       </head>
-      <body>{children}</body>
+           
+      <body>
+      <header>
+        <h1>Encabezado</h1>
+      </header>
+
+      {/* Navegación */}
+      <nav>
+        <ul>
+          <li><a href="/">Inicio</a></li>
+          <li><a href="/about">Acerca de</a></li>
+          {/* Agrega más enlaces de navegación según sea necesario */}
+        </ul>
+      </nav>
+
+      <h2>Vista Moderna</h2>
+      <main >
+        {children}
+      </main>
+
+
+      <footer>
+        <p>Pie de página</p>
+      </footer>
+      </body>
     </html>
   );
 }
