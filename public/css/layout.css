@@ -1,9 +1,67 @@
-body{
-    display: grid;
+/* Reset de estilos */
+body, h1, h2, h3, h4, h5, h6, p, ul, ol, li, nav, header, footer, main {
     margin: 0;
-    height: 100svh;
-  }
-  
-  header{
-    
-  }
+    padding: 0;
+}
+
+/* Estilo del body */
+body {
+    display: grid;
+    grid-template-areas: 
+      "header"
+      "nav"
+      "main"
+      "footer";
+    height: 100vh;
+    grid-template-rows: 10% 5% auto 10%;
+    background-color: #1f1f1f;
+    color: #fff;
+}
+
+/* Estilo oscuro para el encabezado */
+header {
+    grid-area: header;
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+}
+
+/* Estilo oscuro para la navegación */
+nav {
+    grid-area: nav;
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+}
+
+nav ul {
+    list-style-type: none;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0.2rem 0.2rem;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Estilo oscuro para el contenido principal */
+main {
+    grid-area: main;
+    padding: 20px;
+}
+
+/* Estilo oscuro para el pie de página */
+footer {
+    grid-area: footer;
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+}
