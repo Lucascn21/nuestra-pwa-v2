@@ -7,7 +7,7 @@ export const metadata: Metadata = {
 export default function Page() {
   return (
     <>
-      <h1>Next.js + Serwist + About</h1>
+      <h1>Next.js + Serwist + About </h1>
     </>
   );
 }
