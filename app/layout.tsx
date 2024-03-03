@@ -36,9 +36,6 @@ export default function RootLayout({ children }: { children: ReactNode }) {
     <html lang="en" dir="ltr">
       
       <head>
-     
-
-
         <link rel="stylesheet" href="./css/layout.css" />
       </head>
            
@@ -56,7 +53,7 @@ export default function RootLayout({ children }: { children: ReactNode }) {
         </ul>
       </nav>
 
-      <h2>Vista Moderna</h2>
+
       <main >
         {children}
       </main>
