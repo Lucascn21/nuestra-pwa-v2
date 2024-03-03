@@ -12,7 +12,7 @@ body {
       "nav"
       "main"
       "footer";
-    height: 100vh;
+    height: 100svh;
     grid-template-rows: 10% 5% auto 10%;
     background-color: #1f1f1f;
     color: #fff;
